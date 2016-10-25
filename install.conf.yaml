@@ -8,8 +8,10 @@
 
 - link:
     ~/.dotfiles: ''
+    ~/.gitignore_global: .gitignore_global
     ~/.vim: .vim
     ~/.vimrc: .vimrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [git config --global core.excludesfile ~/.gitignore_global, Creating Global Git Ignore]
