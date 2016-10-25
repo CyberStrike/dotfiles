@@ -13,10 +13,11 @@
     ~/.gitignore_global: .gitignore_global
     ~/.vim: .vim
     ~/.vimrc: .vimrc
-    ~/.bash_profile: .bash_profile
     ~/.bashrc: .bashrc
     ~/.profile: .profile
+    ~/.bash_profile: .bash_profile
     ~/.atom/config.cson: .atom/config.cson
+    ~/.irbrc: .irbrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
