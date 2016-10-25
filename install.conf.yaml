@@ -18,7 +18,7 @@
     ~/.bash_profile: .bash_profile
     ~/.atom/config.cson: .atom/config.cson
     ~/.irbrc: .irbrc
-    ~./.gemrc: .gemrc
+    ~/.gemrc: .gemrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
