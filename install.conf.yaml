@@ -1,6 +1,7 @@
 
 - defaults:
     link:
+      create: true
       relink: true
       relative: true
 
@@ -12,6 +13,8 @@
     ~/.gitignore_global: .gitignore_global
     ~/.vim: .vim
     ~/.vimrc: .vimrc
+    ~/.bash_profile: .bash_profile
+    ~/.atom/config.cson: .atom/config.cson
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

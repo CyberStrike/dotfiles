@@ -8,7 +8,7 @@
 [color]
 	ui = auto
 [core]
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/chris/.gitignore_global
 	editor = vim
 	whitespace = warn
 [help]

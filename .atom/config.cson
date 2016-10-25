@@ -1,0 +1,29 @@
+"*":
+  core:
+    disabledPackages: [
+      "welcome"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "seti-ui"
+      "seti-syntax"
+    ]
+    useCustomTitleBar: true
+  editor:
+    fontFamily: "\"Fira Code\""
+    fontSize: 13
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "01af7cd7-6327-4832-59c1-dd54bd129b10"
+  "seti-syntax": {}
+  "seti-ui":
+    compactView: true
+  "tree-view":
+    autoReveal: true
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
