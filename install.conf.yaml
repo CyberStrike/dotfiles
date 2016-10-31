@@ -19,14 +19,14 @@
     ~/.atom/config.cson: .atom/config.cson
     ~/.irbrc: .irbrc
     ~/.gemrc: .gemrc
-    ~/.zlogin: .zprezto/runcoms/zlogin
-    ~/.zlogout: .zprezto/runcoms/zlogout
-    ~/.zpreztorc: .zprezto/runcoms/zpreztorc
-    ~/.zprofile: .zprezto/runcoms/zprofile
-    ~/.zshenv: .zprezto/runcoms/zshenv
     ~/.zshrc: .zprezto/runcoms/zshrc
-
+    ~/.zlogin: .zprezto/runcoms/zlogin
+    ~/.zshenv: .zprezto/runcoms/zshenv
+    ~/.zlogout: .zprezto/runcoms/zlogout
+    ~/.zprofile: .zprezto/runcoms/zprofile
+    ~/.zpreztorc: .zprezto/runcoms/zpreztorc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - [git config --global core.excludesfile ~/.gitignore_global, Creating Global Git Ignore]
+  - [brew install trash]

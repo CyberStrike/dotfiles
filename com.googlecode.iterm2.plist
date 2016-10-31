@@ -816,11 +816,13 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Documents/iTerm2Schemes/schemes</string>
+	<string>~/dotfiles</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{712, 521}</string>
+	<key>NSNavPanelExpandedStateForSaveMode</key>
+	<true/>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -866,7 +868,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>330 307 620 392 0 0 1280 800 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>269 236 918 381 0 0 1280 800 </string>
+	<string>222 205 918 381 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 4 572 453 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -895,12 +897,16 @@
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.3728577196598053</real>
+				<real>0.16345374286174774</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.16678811609745026</real>
 				<key>Red Component</key>
-				<real>0.95683503150939941</real>
+				<real>0.93341982364654541</real>
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
@@ -958,57 +964,81 @@
 			</dict>
 			<key>Ansi 2 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.14004382491111755</real>
+				<real>0.24708741903305054</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.87921047210693359</real>
+				<real>0.63991189002990723</real>
 				<key>Red Component</key>
-				<real>0.59473341703414917</real>
+				<real>0.2491900622844696</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.099807053804397583</real>
+				<real>0.050494257360696793</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.51805692911148071</real>
+				<real>0.71164137125015259</real>
 				<key>Red Component</key>
-				<real>0.98094809055328369</real>
+				<real>0.99410170316696167</real>
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.99877572059631348</real>
+				<real>0.65021049976348877</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.39599207043647766</real>
+				<real>0.22811645269393921</real>
 				<key>Red Component</key>
-				<real>0.61468899250030518</real>
+				<real>0.18871212005615234</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.3728577196598053</real>
+				<real>0.31604009866714478</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
 				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.95683503150939941</real>
+				<real>0.87999057769775391</real>
 			</dict>
 			<key>Ansi 6 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.92060363292694092</real>
+				<real>0.79186719655990601</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.81977206468582153</real>
+				<real>0.68612653017044067</real>
 				<key>Red Component</key>
-				<real>0.34416967630386353</real>
+				<real>0.086931496858596802</real>
 			</dict>
 			<key>Ansi 7 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.70993047952651978</real>
+				<real>0.87565046548843384</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.77144092321395874</real>
+				<real>0.87563550472259521</real>
 				<key>Red Component</key>
-				<real>0.76960963010787964</real>
+				<real>0.87566184997558594</real>
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
@@ -2497,7 +2527,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-10-24T12:39:48Z</date>
+	<date>2016-10-27T19:43:32Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
