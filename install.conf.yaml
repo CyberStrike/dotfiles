@@ -17,6 +17,7 @@
     ~/.profile: .profile
     ~/.bash_profile: .bash_profile
     ~/.atom/config.cson: .atom/config.cson
+    ~/.atom/keymap.cson: .atom/keymap.cson
     ~/.irbrc: .irbrc
     ~/.gemrc: .gemrc
     ~/.zshrc: .zprezto/runcoms/zshrc

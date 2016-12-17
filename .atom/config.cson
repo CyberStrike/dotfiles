@@ -11,11 +11,13 @@
     useCustomTitleBar: true
   editor:
     fontFamily: "\"Fira Code\""
-    fontSize: 13
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
+    softWrap: true
+    softWrapHangingIndent: 2
     tabType: "soft"
+  emmet: {}
   "exception-reporting":
     userId: "01af7cd7-6327-4832-59c1-dd54bd129b10"
   "seti-syntax": {}
@@ -24,6 +26,5 @@
   "tree-view":
     autoReveal: true
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
