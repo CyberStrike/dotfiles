@@ -1,4 +1,6 @@
 "*":
+  "atom-ternjs":
+    useSnippetsAndFunction: true
   core:
     disabledPackages: [
       "welcome"
