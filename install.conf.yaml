@@ -26,6 +26,7 @@
     ~/.zlogout: .zprezto/runcoms/zlogout
     ~/.zprofile: .zprezto/runcoms/zprofile
     ~/.zpreztorc: .zprezto/runcoms/zpreztorc
+    ~/.hyper.js: .hyper.js
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

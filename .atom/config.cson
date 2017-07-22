@@ -1,32 +1,32 @@
 "*":
-  "atom-ternjs":
-    useSnippetsAndFunction: true
   core:
     disabledPackages: [
-      "welcome"
+      "atom-elixir"
     ]
     telemetryConsent: "limited"
     themes: [
-      "seti-ui"
-      "seti-syntax"
+      "pristine-ui"
+      "duotone-dark-space-syntax"
     ]
-    useCustomTitleBar: true
   editor:
-    fontFamily: "\"Fira Code\""
+    fontFamily: "'fira code'"
+    fontSize: 13
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
-    softWrapHangingIndent: 2
-    tabType: "soft"
-  emmet: {}
   "exception-reporting":
-    userId: "01af7cd7-6327-4832-59c1-dd54bd129b10"
-  "seti-syntax": {}
-  "seti-ui":
-    compactView: true
-  "tree-view":
-    autoReveal: true
-    hideIgnoredNames: true
+    userId: "848b278e-828b-4f4c-a88c-d1650e62e108"
+  "fuzzy-finder":
+    ignoredNames: [
+      "**/node_modules/*"
+    ]
+  "linter-ui-default":
+    panelHeight: 53
+    showPanel: true
+  "pristine-ui":
+    tabSizing: "Even"
+  "tool-bar":
+    position: "Left"
   welcome:
     showOnStartup: false
