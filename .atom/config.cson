@@ -22,7 +22,7 @@
       "**/node_modules/*"
     ]
   "linter-ui-default":
-    panelHeight: 53
+    panelHeight: 60.609375
     showPanel: true
   "pristine-ui":
     tabSizing: "Even"
