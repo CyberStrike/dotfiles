@@ -2,6 +2,10 @@
   core:
     disabledPackages: [
       "atom-elixir"
+      "autocomplete-elixir"
+      "linter-elixirc"
+      "language-elixir"
+      "linter"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -10,7 +14,7 @@
     ]
   editor:
     fontFamily: "'fira code'"
-    fontSize: 13
+    fontSize: 12
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -23,7 +27,6 @@
     ]
   "linter-ui-default":
     panelHeight: 60.609375
-    showPanel: true
   "pristine-ui":
     tabSizing: "Even"
   "tool-bar":

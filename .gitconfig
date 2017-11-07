@@ -3,13 +3,14 @@
 [user]
 	email = cyberstrike@gmail.com
 	name = Chris Scott
+	signingkey = E17B7A877DF53177
 [branch]
 	autosetuprebase = always
 [color]
 	ui = auto
 [core]
 	excludesfile = /Users/chris/.gitignore_global
-	editor = vim
+	editor = atom --wait
 	whitespace = warn
 [help]
 	autocorrect = 10
@@ -39,3 +40,5 @@
 	autosquash = true
 [diff]
 	algorithm = patience
+[commit]
+	gpgsign = true
