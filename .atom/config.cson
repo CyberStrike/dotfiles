@@ -6,6 +6,7 @@
       "linter-elixirc"
       "language-elixir"
       "linter"
+      "atom-ide-ui"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -25,11 +26,17 @@
     ignoredNames: [
       "**/node_modules/*"
     ]
+  "ide-php":
+    phpPath: "/usr/local/bin/php"
   "linter-ui-default":
-    panelHeight: 60.609375
+    panelHeight: 53
   "pristine-ui":
     tabSizing: "Even"
   "tool-bar":
     position: "Left"
   welcome:
     showOnStartup: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "

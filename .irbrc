@@ -1,4 +1,4 @@
 # require 'terminal-notifier'
-require 'irbtools/more'
+require 'irbtools'
 require 'awesome_print'
 AwesomePrint.irb!

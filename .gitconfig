@@ -10,7 +10,6 @@
 	ui = auto
 [core]
 	excludesfile = /Users/chris/.gitignore_global
-	editor = atom --wait
 	whitespace = warn
 [help]
 	autocorrect = 10
@@ -40,5 +39,8 @@
 	autosquash = true
 [diff]
 	algorithm = patience
-[commit]
-	gpgsign = true
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
