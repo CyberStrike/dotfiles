@@ -1,0 +1,65 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...
+bindkey '^[[1;9C' forward-word
+bindkey '^[[1;9D' backward-word
+
+alias ga='git add'
+alias gst='git status'
+alias fs='foreman s -p 3000'
+alias bfg='java -jar bfg.jar'
+alias subl='//Applications/"Sublime Text.app"/Contents/SharedSupport/bin/subl'
+alias dk='docker'
+alias dkk='docker kill'
+alias dkka='docker kill $(dk ps -aq)'
+alias dkrma='docker rm $(docker ps -aq)'
+alias dkc='docker-compose'
+alias dkcu='docker-compose up'
+alias dkck='docker-compose kill'
+alias dkcr='docker-compose rm'
+alias pcat='pygmentize -g -O style=colorful,linenos=1'
+alias artisan='php artisan'
+alias rip='lsof -n -i | grep LISTEN'
+
+### Third Part Sourcing
+
+# Source NVM
+source $(brew --prefix nvm)/nvm.sh
+
+export NVM_DIR=~/.nvm # Add NVM to PATH for scripting
+export PATH=$PATH:/usr/local/go/bin # Go Tools
+export GOPATH=$HOME
+
+# place this after nvm initialization!
+autoload -U add-zsh-hook
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
+# DirEnv Init
+eval "$(direnv hook zsh)"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+### Added by IBM Bluemix CLI
+source /usr/local/Bluemix/bx/zsh_autocomplete
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
