@@ -20,6 +20,7 @@
     ~/.atom/keymap.cson: .atom/keymap.cson
     ~/.irbrc: .irbrc
     ~/.gemrc: .gemrc
+    ~/.zprezto: .zprezto
     ~/.zshrc: .zprezto/runcoms/zshrc
     ~/.zlogin: .zprezto/runcoms/zlogin
     ~/.zshenv: .zprezto/runcoms/zshenv
