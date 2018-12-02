@@ -1,4 +1,6 @@
 "*":
+  "atom-ide-ui":
+    use: {}
   core:
     disabledPackages: [
       "atom-elixir"
@@ -6,8 +8,8 @@
       "linter-elixirc"
       "language-elixir"
       "linter"
-      "atom-ide-ui"
     ]
+    projectHome: "/Users/chris/projects"
     telemetryConsent: "limited"
     themes: [
       "pristine-ui"
@@ -15,7 +17,6 @@
     ]
   editor:
     fontFamily: "'fira code'"
-    fontSize: 12
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -30,6 +31,8 @@
     phpPath: "/usr/local/bin/php"
   "linter-ui-default":
     panelHeight: 53
+  "markdown-preview":
+    useGitHubStyle: true
   "pristine-ui":
     tabSizing: "Even"
   "tool-bar":
