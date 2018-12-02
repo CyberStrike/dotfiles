@@ -2,7 +2,7 @@
 	user = CyberStrike
 [user]
 	email = cyberstrike@gmail.com
-	name = Chris Scott
+	name = Chris
 	signingkey = E17B7A877DF53177
 [branch]
 	autosetuprebase = always
