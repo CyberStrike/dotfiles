@@ -38,44 +38,37 @@ alias liamneeson='function __liamneeson() {
 
 
 # DirEnv Init
-eval "$(direnv hook zsh)"
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# Source Pyenv
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
-
-# Source NVM
-export NVM_DIR=~/.nvm # Add NVM to PATH for scripting
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
-# place this after nvm initialization!
-autoload -U add-zsh-hook
-load-nvmrc() {
-  if [[ -f .nvmrc && -r .nvmrc ]]; then
-    nvm use
-  fi
-}
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
-export PATH="$PATH:/usr/local/opt/openssl/bin"
-export PATH="$PATH:$HOME/.composer/vendor/bin"
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH="$(yarn global bin):$PATH"
+# eval "$(direnv hook zsh)"
+#
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+#
+# # Source Pyenv
+# if command -v pyenv 1>/dev/null 2>&1; then
+#   eval "$(pyenv init -)"
+# fi
+#
+# # Source NVM
+# export NVM_DIR=~/.nvm # Add NVM to PATH for scripting
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+#
+# # place this after nvm initialization!
+# autoload -U add-zsh-hook
+# load-nvmrc() {
+#   if [[ -f .nvmrc && -r .nvmrc ]]; then
+#     nvm use
+#   fi
+# }
+# add-zsh-hook chpwd load-nvmrc
+# load-nvmrc
+#
+# [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+# export PATH="$PATH:/usr/local/opt/openssl/bin"
+# export PATH="$PATH:$HOME/.composer/vendor/bin"
+# export ANDROID_HOME=$HOME/Library/Android/sdk
+# export PATH=$PATH:$ANDROID_HOME/tools
+# export PATH=$PATH:$ANDROID_HOME/tools/bin
+# export PATH=$PATH:$ANDROID_HOME/platform-tools
+# export PATH="$(yarn global bin):$PATH"
 
 ### Added by the Heroku Toolbelt
 # export PATH="$PATH:/usr/local/heroku/bin"
-
-
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
