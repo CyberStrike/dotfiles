@@ -34,17 +34,16 @@ alias liamneeson='function __liamneeson() {
                 kill $(findyou | grep $1 | awk '\''{print $2}'\'' )
                }; __liamneeson'
 
-### Third Part Sourcing
+### Third Party Sourcing
 
 # DirEnv Init
 eval "$(direnv hook zsh)"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# Source Pyenv
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
+iterm2_set_user_var phpVersion $(php -v | awk '/^PHP/ { print $2 }')
+iterm2_set_user_var rubyVersion $(ruby -v | awk '{ print $2 }')
+iterm2_set_user_var nodeVersion $(node -v)
 
 # Source NVM
 export NVM_DIR=~/.nvm # Add NVM to PATH for scripting
@@ -60,17 +59,30 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
-[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
-export PATH="$PATH:/usr/local/opt/openssl/bin"
-export PATH="$PATH:$HOME/.composer/vendor/bin"
+# Source Pyenv
+# if command -v pyenv 1>/dev/null 2>&1; then
+#   eval "$(pyenv init -)"
+# fi
+
+export PATH=$PATH:/usr/local/opt/openssl/bin
+export PATH=$PATH:$HOME/.composer/vendor/bin
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH="$(yarn global bin):$PATH"
 
 ## Added by the Heroku Toolbelt
 export PATH="$PATH:/usr/local/heroku/bin"
 
-export PATH="$PATH:$HOME/.rvm/bin"
-export PATH="$GEM_HOME/bin:$PATH"
+# export PHPBREW_ROOT="$HOME/.phpbrew"
+# if [ -d "${PHPBREW_ROOT}" ]; then
+#     export PHPBREW_SET_PROMPT=1
+#     export PHPBREW_RC_ENABLE=1
+#     source $PHPBREW_ROOT/bashrc
+# fi
+
+# Source PHP Brew
+[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+
+# RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
